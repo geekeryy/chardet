@@ -46,7 +46,7 @@ func (r *recognizerMultiByte) matchConfidence(input *recognizerInput) int {
 		}
 	}
 
-	if doubleByteCharCount <= 10 && badCharCount == 0 && commonCharCount < 2 {
+	if doubleByteCharCount <= 10 && badCharCount == 0 && commonCharCount < 1 {
 		if doubleByteCharCount == 0 && totalCharCount < 10 {
 			return 0
 		} else {
